@@ -23,7 +23,7 @@ void loop() {
 void ButtonPush(byte Button) {
   Serial.print("Button Pushed: ");
   Serial.println(Button);
-  /* Will return -1 on release of a button
+  /* Will return 255 on release of a button
      Or 0 to 4 corrisponding to a specific button
      Depending on the resistors used to make your
      keypad you may need to adjust the analog value
