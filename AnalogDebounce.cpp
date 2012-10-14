@@ -29,7 +29,7 @@ void AnalogDebounce::loopCheck() {
       adc_key_in = adc_key_reading;
       time_detected = millis() + 150;  // This makes sure if button is held it doesn't go crazy fast
       (*callback)(adc_key_in);
-      if (adc_key_in != -1) {
+      if (adc_key_in != 255) {
         buttoncount[adc_key_in]+=1;
       }
     }
