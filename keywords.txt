@@ -1,0 +1,3 @@
+AnalogDebounce	KEYWORD1
+loopCheck	KEYWORD2
+get_Key		KEYWORD2
