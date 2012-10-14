@@ -4,7 +4,7 @@ I developed this library for use with voltage divided keypads that use a single 
 
 Installation
 
-To install this library please download and place in <Your Sketchbook Folder>/libraries/AnalogDebounce
+To install this library please download and place in [Your Sketchbook Folder]/libraries/AnalogDebounce
 
 To use this library simply check out the BasicUse example:
 
