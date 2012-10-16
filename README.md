@@ -41,4 +41,12 @@ void ButtonPush(byte Button) {
 
 Changelog
 
-10/14/2012: Initial Release of the library.
+10/15/2012
+----------
+Made the time in miliseconds it takes to determain a button change public via the minPressTime integer.
+Made the repeat fire time in miliseconds available via the repeatDelay integer.
+Added keywords contexts for all variables.
+
+10/14/2012
+----------
+Initial Release of the library.

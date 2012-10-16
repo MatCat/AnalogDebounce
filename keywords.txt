@@ -1,3 +1,7 @@
 AnalogDebounce	KEYWORD1
 loopCheck	KEYWORD2
 get_Key		KEYWORD2
+minPressTime	KEYWORD2
+repeatDelay	KEYWORD2
+buttoncount	KEYWORD2
+adc_key_val	KEYWORD2

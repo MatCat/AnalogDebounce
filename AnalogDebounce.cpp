@@ -11,6 +11,8 @@ AnalogDebounce::AnalogDebounce(byte pin,button_callback f) {
     adc_key_val[2] = 360;
     adc_key_val[3] = 550;
     adc_key_val[4] = 780;
+    minPressTime = 70;
+    repeatDelay = 150;
     callback = f;
     for (int a = 0; a < 5; a++) {buttoncount[a] = 0;}
     time_detected = millis();
@@ -25,9 +27,9 @@ void AnalogDebounce::loopCheck() {
       time_detected = millis();
     }
     long timediff = millis() - time_detected;
-    if (timediff > 70) {
+    if (timediff > minPressTime) {
       adc_key_in = adc_key_reading;
-      time_detected = millis() + 150;  // This makes sure if button is held it doesn't go crazy fast
+      time_detected = millis() + repeatDelay;  // This makes sure if button is held it doesn't go crazy fast
       (*callback)(adc_key_in);
       if (adc_key_in != 255) {
         buttoncount[adc_key_in]+=1;

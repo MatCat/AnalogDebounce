@@ -18,7 +18,8 @@
         int key;
         int adc_key_val[5];
         int buttoncount[5];
-
+  	int minPressTime;
+	int repeatDelay;
         AnalogDebounce(byte Pin,button_callback f);
         ~AnalogDebounce();
         void loopCheck(void);
