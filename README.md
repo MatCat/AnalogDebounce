@@ -2,6 +2,8 @@ AnalogDebounce Library by MatCat
 
 I developed this library for use with voltage divided keypads that use a single analog input for multiple buttons.  The default values will work for most shields utilizing a standard 5 button design, however a few simple modifications to variables in the library can easily allow for any number of buttons up to 254 total.
 
+Official discussion thread on Arduino Forum: http://arduino.cc/forum/index.php/topic,127128.0.html
+
 Installation
 
 To install this library please download and place in [Your Sketchbook Folder]/libraries/AnalogDebounce
